@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+<!-- Autocomplete -->
+<h2 class="demoHeaders">Autocomplete</h2>
+<div>
+	<input id="autocomplete" title="type &quot;a&quot;">
+</div>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+var availableTags = [
+	"Kabupaten Cilacap",
+	"Kabupaten Banyumas",
+	"Kabupaten Purbalingga",
+	"Kabupaten Banjarnegara",
+	"Kabupaten Kebumen",
+	"Kabupaten Purworejo",
+	"Kabupaten Wonosobo",
+	"Kabupaten Magelang",
+	"Kabupaten Boyolali",
+	"Kabupaten Klaten",
+	"Kabupaten Sukoharjo",
+	"Kabupaten Wonogiri",
+	"Kabupaten Karanganyar",
+	"Kabupaten Sragen",
+	"Kabupaten Grobogan",
+	"Kabupaten Blora",
+	"Kabupaten Rembang",
+	"Kabupaten Pati",
+	"Kabupaten Kudus",
+	"Kabupaten Jepara",
+	"Kabupaten Demak",
+	"Kabupaten Semarang",
+	"Kabupaten Temanggung",
+	"Kabupaten Kendal",
+	"Kabupaten Batang",
+	"Kabupaten Pekalongan",
+	"Kabupaten Pemalang",
+	"Kabupaten Tegal",
+	"Kabupaten Brebes",
+	"Kota Magelang",
+	"Kota Surakarta",
+	"Kota Salatiga",
+	"Kota Semarang",
+	"Kota Pekalongan",
+	"Kota Tegal",
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+</script>
+</body>
+</html>
